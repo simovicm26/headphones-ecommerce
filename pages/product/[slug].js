@@ -107,6 +107,7 @@ export const getStaticPaths = async () => {
   const productPaths = similarProducts.map((product) => ({
     params: { slug: product.slug.current },
   }));
+  console.log(productPaths);
   return {
     paths: productPaths,
     fallback: false,
